@@ -1,0 +1,36 @@
+
+spring:
+  datasource:
+    driver-class-name: org.firebirdsql.jdbc.FBDriver
+    url: jdbc:firebirdsql://localhost:3050/W:/Work_2021/Spring/Spring for beginners (Zaur Tregulov)/spring_data_rest/db/test7.fdb?sql_dialect=3&charSet=utf-8
+    username: user
+    password: user
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.FirebirdDialect
+        show_sql: true
+    open-in-view: false
+  security:
+    user:
+      name: Маша
+      password: user
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  info:
+    env:
+      enabled: true
+
+info:
+  app.encoding: @project.build.sourceEncoding@
+  name: Приложение Spring Data Rest
+  description: Описание приложения
+  author: Автор приложения
+
+
+
+
