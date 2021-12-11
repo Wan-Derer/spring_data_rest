@@ -16,6 +16,6 @@ public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
   // DELETE   employees/{employeeId}
   // Для этих методов даже не надо создавать контроллер
 
-  List<Employee> findAllByName(String name);
+//  List<Employee> findAllByName(String name);
 
 }
